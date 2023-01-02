@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main{
+  display: flex;
+  justify-content: center;
+  margin: 20vh auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Card {
+  width: calc(100% / 5 - 70px );
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.Card img{
+  width: 100%;
+  height: auto;
+}
+.price{
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+}
+.soldBy{
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}

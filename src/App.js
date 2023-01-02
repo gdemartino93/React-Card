@@ -1,10 +1,17 @@
-import Componente1 from "./Componente1";
+import Card from "./Card";
 function App() {
   return (
     <div className="App">
-      <header>
-        <Componente1 />
-      </header>
+      <main>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </main>
   
     </div>
   );
