@@ -7,6 +7,7 @@ const Card = () => {
     <section className='Card'>
         <img src={productImg} alt={descriptionImg} />
         <h3>Amazon 35euro Gift Card</h3>
+        <hr></hr>
         <span className='price'> {price} euro</span>
         <span className='soldBy'> Venduto da xxxmaster</span>
         <button>Compra ora per {price} euro</button>
