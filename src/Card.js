@@ -2,14 +2,15 @@ import React from 'react'
 
 
 const Card = (props) => {
+  const {nome,prezzo,img, soldBy} = props;
   return (
     <section className='Card'>
-        <img src={props.img} alt={props.nome} />
-        <h3>{props.nome}</h3>
+        <img src={img} alt={nome} />
+        <h3>{nome}</h3>
         <hr></hr>
-        <span className='price'> {props.prezzo} euro</span>
-        <span className='soldBy'> Venduto da xxxmaster</span>
-        <button>Compra ora per {props.prezzo} euro</button>
+        <span className='price'> {prezzo} euro</span>
+        <span className='soldBy'> Venduto da {soldBy}</span>
+        <button>Compra ora per {prezzo} euro</button>
     </section>
   )
 }
