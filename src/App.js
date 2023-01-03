@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Card nome={amazonGift.nome} prezzo={amazonGift.prezzo} img={amazonGift.img}  />
-        <Card nome={covidMask.nome} prezzo={covidMask.prezzo} img={covidMask.img} />
+        <Card {...amazonGift} />
+        <Card {...covidMask}/>
 
       </main>
   
