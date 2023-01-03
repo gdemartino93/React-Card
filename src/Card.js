@@ -1,8 +1,6 @@
 import React from 'react'
 
-
-const Card = (props) => {
-  const {nome,prezzo,img, soldBy} = props;
+const Card = ({nome, prezzo, img, soldBy} ) => {
   return (
     <section className='Card'>
         <img src={img} alt={nome} />
