@@ -19,7 +19,7 @@ main{
   gap: 30px;
 }
 .Card {
-  width: calc(100% / 5 - 70px );
+  width: 200px;
   background-color: white;
   border: 1px solid black;
   display: flex;
