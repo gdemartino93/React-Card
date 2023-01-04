@@ -24,15 +24,28 @@ const reactCourse = {
   img : "https://amerlin.keantex.com/wp-content/uploads/2021/02/react.png",
   soldBy : "Gianluca"
 }
+const tshirtMilan = {
+  nome : "Maglia Milan",
+  prezzo : 100,
+  img : "https://www.footballitalia.it/69635-large_default/ac-milan-maglia-gara-home-puma-21-22-bambino-da-5a-16-anni.jpg",
+  soldBy : "Ac Milan"
+}
 
 function App() {
   return (
     <div className="App">
       <main>
-        <Card {...amazonGift} />
-        <Card {...covidMask}/>
+        <Card {...amazonGift}>
+        <div className="offerta">
+          <span> OFFERTA </span>
+        </div>
+        </Card>
+        <Card {...covidMask}>
+         
+        </Card>
         <Card {...montblanc}/>
         <Card {...reactCourse} />
+        <Card {...tshirtMilan} />
 
       </main>
   
