@@ -1,5 +1,7 @@
 import Card from "./Card";
 import products from "./Products";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 function App() {
