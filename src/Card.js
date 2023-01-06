@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 
-const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children,limited} ) => {
+const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children} ) => {
   const [ price , setPrice] = useState(prezzoAttuale);
   const [ tasto , setTasto] = useState("Mostra il prezzo");
   const showPrice = () =>{
@@ -24,9 +24,7 @@ const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children,limited} ) => {
         <span className='price '> { price } </span>
         <button onClick={showPrice} className="btn btn-success" >{tasto}</button>
         <span className='soldBy'> Venduto da {soldBy}</span>
-        <button onClick={()=> alert(`nome: ${nome}`)} >Compra ora per {prezzo} euro</button>
         <span>Prezzo attuale:</span>
-        <p>{limited}</p>
    
     </section>
   )
