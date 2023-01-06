@@ -21,9 +21,9 @@ const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children} ) => {
         <img src={img} alt={nome} />
         <h3>{nome}</h3>
         <hr></hr>
-        <span className='price '> { price } </span>
-        <button onClick={showPrice} className="btn btn-success" >{tasto}</button>
-        <span className='soldBy'> Venduto da {soldBy}</span>
+        <span className='price text-center'> { price } </span>
+        <button onClick={showPrice} className="btn btn-success"> {tasto} </button>
+        <span className='soldBy'> Venduto da {soldBy} </span>
         <span>Prezzo attuale:</span>
    
     </section>
