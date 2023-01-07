@@ -1,14 +1,14 @@
 import React , {useState} from 'react'
 
-const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children} ) => {
-  const [ price , setPrice] = useState(prezzoAttuale);
+const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children, prezzoNascosto} ) => {
+  const [ price , setPrice] = useState(prezzoNascosto);
   const [ tasto , setTasto] = useState("Mostra il prezzo");
   const showPrice = () =>{
     if (price === null){
       setPrice(prezzo);
       setTasto("Nascondi il prezzo")
     }else{
-      setPrice(prezzoAttuale);
+      setPrice(prezzoNascosto);
       setTasto("Mostra il prezzo")
     }
   };
@@ -24,6 +24,7 @@ const Card = ({nome, prezzo, img, soldBy,prezzoAttuale,children} ) => {
         <span className='price text-center'> { price } </span>
         <button onClick={showPrice} className="btn btn-success"> {tasto} </button>
         <span className='soldBy'> Venduto da {soldBy} </span>
+        <button className='btn btn-danger'> Bid </button>
         <span>Prezzo attuale:</span>
    
     </section>
